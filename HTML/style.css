@@ -1,0 +1,80 @@
+body{
+     font-family: Arial, sans-serif;
+     font-size: 14px;
+     color: #333;
+     background-color: #f5f5f5;
+     margin: 0px;
+}
+ .header{
+     background-color: #fff;
+}
+ .header-container{
+     box-shadow: 0 0 5px rgba(0,0,0,.2);
+}
+ .container{
+     display: inline-block;
+     padding: 5px;
+}
+ .logo{
+     float: left;
+     padding-right: 550px;
+     margin: 15px 0px 10px 105px;
+}
+ .img-logo{
+     width: 60px;
+}
+ .nav-menu{
+     float: right;
+}
+ .nav-menu .list-menu{
+     padding-top: 10px;
+}
+ .list-menu{
+     display: inline-flex;
+}
+ .nav-menu .list-menu .menu-item .item-link{
+     position: relative;
+     display: inline-block;
+     padding-bottom: 10px;
+     font-size: 14px;
+     color: #333;
+     text-decoration: none;
+}
+ .item-link:after {
+     content: "";
+     width: 0px;
+     bottom: 0;
+     left: 0;
+     height: 3px;
+     background-color: #ccc;
+     transition: all 0.5s;
+     position: absolute;
+}
+ .item-link:hover:after {
+     width: 100%;
+}
+ .menu-item{
+     list-style: none;
+     padding: inherit;
+}
+ .has-sub-menu:hover .sub-menu{
+     position: absolute;
+     top: 59px;
+     opacity: 1;
+     visibility: visible;
+     transition: all 0.3s;
+}
+ .sub-menu{
+     box-shadow: 0 0 5px rgba(0,0,0,.2);
+     background-color: #fff;
+     visibility: hidden;
+     padding: 10px;
+     position: absolute;
+}
+ .sub-menu:hover{
+     opacity: 1;
+}
+ .sub-menu .menu-item{
+     padding: 10px 10px 0px 10px;
+}
+ 
